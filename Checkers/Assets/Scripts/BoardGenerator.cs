@@ -35,6 +35,7 @@ public class BoardGenerator : MonoBehaviour
         Tile tileSettings = tileObject.GetComponent<Tile>();
         tileSettings.setX(x);
         tileSettings.setZ(z);
+        tileSettings.setId((z+1)+(x*this.width));
 
         if((x+z)%2 == 0)
         {
